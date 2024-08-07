@@ -7,8 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -17,11 +21,11 @@
   >
     <main>
       <div class="container mx-auto">
-        <nav class="py-8">
+        <nav class="py-8 absolute w-full mx-auto">
           <a href="/" class="font-display text-6xl font-bold text-main">Logo</a>
         </nav>
-        <section class="flex">
-          <div class="max-w-3xl">
+        <section class="flex mb-24">
+          <div class="max-w-3xl py-60 flex flex-col gap-8">
             <h1 class="text-[80px] text-main leading-tight">
               How to attract your dream partner
             </h1>
@@ -32,41 +36,264 @@
             </p>
             <a
               href="#"
-              class="text-2xl bg-red-orpiment text-white px-8 py-3 rounded-full"
+              class="text-2xl bg-red-orpiment text-white px-8 py-3 rounded-full self-start"
               >Download Your Guide Now</a
             >
           </div>
-          <div>
+          <div
+            class="bg-red-orpiment bg-opacity-[0.13] rounded-bl-full rounded-br-full"
+          >
             <img src="assets/hero-img.webp" alt="" />
           </div>
         </section>
-        <section>
+        <section class="mb-24">
           <h2 class="text-5xl text-center text-main">What you'll achieve:</h2>
-          <div class="grid grid-cols-3">
-            <div>
-              <img src="assets/grid-1.webp" alt="" />
-              <p>
+          <div class="grid grid-cols-3 gap-8 py-24">
+            <div class="flex flex-col place-items-center">
+              <img src="assets/grid-1.webp" alt="" class="w-72 mb-5" />
+              <p class="text-2xl text-center max-w-80 w-full text-secondary">
                 Why you don’t need to settle for unhappiness in this ONE area of
                 your life
               </p>
             </div>
-            <div>
-              <img src="assets/grid-2.webp" alt="" />
-              <p>
+            <div class="flex flex-col place-items-center pt-32">
+              <img src="assets/grid-2.webp" alt="" class="w-72 mb-5" />
+              <p class="text-2xl text-center max-w-80 w-full text-secondary">
                 Why you CAN have it all (and how to stop attracting the wrong
                 guys who are intimidated by your success)
               </p>
             </div>
-            <div>
-              <img src="assets/grid-3.webp" alt="" />
-              <p>
+            <div class="flex flex-col place-items-center">
+              <img src="assets/grid-3.webp" alt="" class="w-72 mb-5" />
+              <p class="text-2xl text-center max-w-80 w-full text-secondary">
                 How to break down the walls that keep your authentic self hidden
                 from your forever partner
               </p>
             </div>
           </div>
         </section>
+        <section>
+          <div class="flex">
+            <img src="assets/marni.webp" alt="" />
+            <div class="flex flex-col gap-8">
+              <h2 class="text-8xl text-main">
+                Meet our founder, <span class="text-red-orpiment">Marni</span>
+              </h2>
+              <p>
+                Having been married for 17 years, divorced, and successfully
+                dated again in today’s complex social environment, and now
+                happily married, Marni understands what it feels like to be
+                lonely and sick of wasting time going on dates and having
+                relationships with unavailable men that go nowhere.<br />
+                Through her own journey to find love, Marni discovered that
+                creating a process to shorten the journey for other women
+                suffering from the inability to create emotionally safe and
+                fulfilling life relationships was truly the mission of her soul
+                and purpose.
+              </p>
+              <a
+                href="#"
+                class="text-2xl bg-red-orpiment text-white px-8 py-3 rounded-full self-start"
+                >Discover Marni’s Proven Process</a
+              >
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+            <div
+              class="grid grid-cols-2 gap-6 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400"
+            >
+              <a href="#" class="flex justify-center items-center">
+                <img src="assets/oprah.webp" alt="" />
+              </a>
+              <a href="#" class="flex justify-center items-center">
+                <img src="assets/drphil.webp" alt="" />
+              </a>
+              <a href="#" class="flex justify-center items-center">
+                <img src="assets/cosmopolitan.webp" alt="" />
+              </a>
+              <a href="#" class="flex justify-center items-center">
+                <img src="assets/glamour.webp" alt="" />
+              </a>
+              <a href="#" class="flex justify-center items-center">
+                <img src="assets/abc.webp" alt="" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="flex">
+            <div class="accordion-container">
+              <div
+                class="ac bg-transparent border-0 border-b-2 border-[#aa9f89]"
+              >
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">
+                    Let go of limiting beliefs
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    If you don’t think you deserve a good man, you’re grappling
+                    with accepting that a relationship is not in the cards for
+                    you, or you think you have to settle for a less than ideal
+                    soul mate, we’ll help you identify and learn to let go of
+                    what’s holding you back.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="ac bg-transparent border-0 border-b-2 border-[#aa9f89]"
+              >
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">
+                    Break down barriers
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Animi eos deleniti quos, mollitia aut nihil. Veritatis rem
+                    deleniti sint laborum, labore, eveniet, beatae consequuntur
+                    dolor accusantium atque laboriosam tempora molestiae?
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="ac bg-transparent border-0 border-b-2 border-[#aa9f89]"
+              >
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">
+                    Fall in love with your true self
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolorem mollitia deleniti suscipit, dolorum velit cupiditate
+                    non, tempora, quisquam voluptatum excepturi amet ipsum
+                    obcaecati expedita facilis culpa id iusto quasi sapiente.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="assets/acc-img.webp" alt="" />
+            </div>
+          </div>
+        </section>
       </div>
+      <section class="bg-secondary">
+        <div class="container mx-auto py-32 flex gap-8">
+          <div>
+            <h2 class="text-5xl text-white">
+              See how women have been impacted by the
+              <span class="text-[#ddba7c]">power of love</span>:
+            </h2>
+            <div class="bg-illusive-dream rounded-br-full py-10 pl-10 pr-24">
+              <p class="font-display font-bold text-3xl text-main">
+                “Once Marni held me accountable, it was easier for me to finally
+                recognize when Mr. Right (Mark) came along.”
+              </p>
+              <p>
+                If I hadn’t followed the guiding hand of Marni, I wouldn’t have
+                been ready to accept the moments and opportunities presented to
+                me every day.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="bg-illusive-dream rounded-tl-full py-10 pr-10 pl-32">
+              <p class="font-display font-bold text-3xl text-main">
+                “I am now much more grounded and confident and I feel like I’m
+                living the life that I wanted to live now.”
+              </p>
+              <p>
+                When I first joined the program, the best initial results I got
+                were me actually loving who I am. I think I always had an
+                appreciation for myself, but I didn’t truly believe that I was
+                worthy of great things.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mx-auto">
+          <h2 class="text-7xl">What’s on the agenda</h2>
+          <div>
+            <h3>Your REVEAL Day! (aka The Silver Bullet)</h3>
+            <p>
+              Identify your personal 10% blindspot (everyone has one) that sends
+              quality men running for the hills and clear limiting beliefs that
+              keep you stuck in the scarcity mindset (so you can attract a
+              quality man who’s words and actions actually match).
+              <br />
+              By the end of the day, you’ll know EXACTLY why you’re single and
+              what next steps are required to get you closer to magnetizing
+              high-caliber men and creating the life you love.
+            </p>
+
+            <ol class="relative border-s-4 border-lox border-opacity-25">
+              <li class="mb-10 ms-6">
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 bg-lox text-white rounded-full -start-3 ring-8 ring-lox"
+                >
+                  1
+                </span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold">
+                  Understand Why
+                </h3>
+                <p class="mb-4 text-base font-normal">
+                  Even though you’ve read all the self-help books and followed
+                  all the rules — you’re still single and how to make our secret
+                  technology work for you so that you attract the hot,
+                  high-quality man your heart desires.
+                </p>
+              </li>
+              <li class="mb-10 ms-6">
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 bg-lox text-white rounded-full -start-3 ring-8 ring-lox"
+                >
+                  2
+                </span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold">
+                  Understand Why
+                </h3>
+                <p class="mb-4 text-base font-normal">
+                  Even though you’ve read all the self-help books and followed
+                  all the rules — you’re still single and how to make our secret
+                  technology work for you so that you attract the hot,
+                  high-quality man your heart desires.
+                </p>
+              </li>
+              <li class="ms-6">
+                <span
+                  class="absolute flex items-center justify-center w-6 h-6 bg-lox text-white rounded-full -start-3 ring-8 ring-lox"
+                >
+                  3
+                </span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold">
+                  Understand Why
+                </h3>
+                <p class="mb-4 text-base font-normal">
+                  Even though you’ve read all the self-help books and followed
+                  all the rules — you’re still single and how to make our secret
+                  technology work for you so that you attract the hot,
+                  high-quality man your heart desires.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script>
+      new Accordion(".accordion-container");
+    </script>
   </body>
 </html>

@@ -8,6 +8,7 @@ module.exports = {
         secondary: "#7e7666",
         "red-orpiment": "#cb6f56",
         lox: "#e99077",
+        "illusive-dream": "#e0d3c2",
       },
     },
     container: {
