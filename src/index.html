@@ -7,84 +7,154 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&family=Playfair+Display:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/css/tabby-ui.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/spinning-text.webp"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body
     class="bg-[url('../assets/gradient.webp')] bg-center bg-no-repeat bg-cover"
   >
-    <main>
+    <main class="relative">
       <div class="container mx-auto">
-        <nav class="py-8 absolute w-full mx-auto">
-          <a href="/" class="font-display text-6xl font-bold text-main">Logo</a>
-        </nav>
-        <section class="flex mb-24">
-          <div class="max-w-3xl py-60 flex flex-col gap-8">
-            <h1 class="text-[80px] text-main leading-tight">
-              How to attract your dream partner
-            </h1>
-            <p class="text-secondary text-2xl">
-              Overcome the beliefs that block your ability to connect with high
-              quality men and learn the real reason why smart, successful women
-              are still single after 40.
-            </p>
-            <a
-              href="#"
-              class="text-2xl bg-red-orpiment text-white px-8 py-3 rounded-full self-start"
-              >Download Your Guide Now</a
-            >
-          </div>
-          <div
-            class="bg-red-orpiment bg-opacity-[0.13] rounded-bl-full rounded-br-full"
+        <nav
+          class="py-8 absolute w-auto max-w-full mx-auto z-50 lg:left-auto left-1/2 lg:translate-x-0 -translate-x-1/2"
+        >
+          <a
+            href="/"
+            class="font-display md:text-6xl sm:text-5xl text-4xl font-bold text-main hover:opacity-50 transition-all ease-in-out"
+            >Logo</a
           >
-            <img src="assets/hero-img.webp" alt="" />
+        </nav>
+      </div>
+      <section class="md:mb-32 mb-20">
+        <div class="container mx-auto">
+          <div
+            class="flex lg:flex-row flex-col xl:gap-20 gap-12 md:mb-32 mb-20"
+          >
+            <div
+              class="2xl:max-w-3xl xl:max-w-2xl lg:max-w-xl max-w-full xl:pt-60 xl:pb-60 lg:pt-48 sm:pt-24 pt-0 flex flex-col gap-8 lg:oder-1 order-2"
+            >
+              <h1
+                class="2xl:text-[80px] md:text-6xl text-4xl text-main leading-tight"
+              >
+                How to attract your dream partner
+              </h1>
+              <p class="text-secondary 2xl:text-[27px] text-xl">
+                Overcome the beliefs that block your ability to connect with
+                high quality men and learn the real reason why smart, successful
+                women are still single after 40.
+              </p>
+              <a
+                href="#"
+                class="2xl:text-2xl text-xl font-bold bg-red-orpiment text-white px-10 py-5 rounded-full self-start hover:bg-opacity-50 transition-all ease-in-out"
+                >Download Your Guide Now</a
+              >
+            </div>
+            <div
+              class="relative bg-red-orpiment bg-opacity-[0.13] rounded-bl-full rounded-br-full lg:flex lg:flex-col xl:px-10 xl:justify-normal justify-center lg:order-2 order-1 lg:pt-0 sm:pt-32 pt-24"
+            >
+              <img
+                src="assets/spinning-text.webp"
+                alt=""
+                class="animate-spin-slow absolute 2xl:w-52 2xl:h-52 w-36 h-36 2xl:top-[10%] top-[35%] right-0 xl:block hidden"
+              />
+              <img
+                src="assets/hero-img.webp"
+                alt=""
+                class="lg:mt-auto lg:max-w-full max-w-lg lg:w-auto w-full lg:mx-0 mx-auto"
+              />
+            </div>
           </div>
-        </section>
-        <section class="mb-24">
-          <h2 class="text-5xl text-center text-main">What you'll achieve:</h2>
-          <div class="grid grid-cols-3 gap-8 py-24">
+        </div>
+      </section>
+      <section class="md:mb-32 mb-20">
+        <div class="container mx-auto">
+          <h2 class="xl:text-5xl text-4xl text-center text-main">
+            What you'll achieve:
+          </h2>
+          <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-16 py-24">
             <div class="flex flex-col place-items-center">
-              <img src="assets/grid-1.webp" alt="" class="w-72 mb-5" />
-              <p class="text-2xl text-center max-w-80 w-full text-secondary">
+              <img src="assets/grid-1.webp" alt="" class="xl:w-72 w-60 mb-5" />
+              <p
+                class="2xl:text-[27px] text-xl text-center max-w-82 w-full text-secondary"
+              >
                 Why you don’t need to settle for unhappiness in this ONE area of
                 your life
               </p>
             </div>
-            <div class="flex flex-col place-items-center pt-32">
-              <img src="assets/grid-2.webp" alt="" class="w-72 mb-5" />
-              <p class="text-2xl text-center max-w-80 w-full text-secondary">
+            <div class="flex flex-col place-items-center md:pt-32">
+              <img src="assets/grid-2.webp" alt="" class="xl:w-72 w-60 mb-5" />
+              <p
+                class="2xl:text-[27px] text-xl text-center max-w-82 w-full text-secondary"
+              >
                 Why you CAN have it all (and how to stop attracting the wrong
                 guys who are intimidated by your success)
               </p>
             </div>
             <div class="flex flex-col place-items-center">
-              <img src="assets/grid-3.webp" alt="" class="w-72 mb-5" />
-              <p class="text-2xl text-center max-w-80 w-full text-secondary">
+              <img src="assets/grid-3.webp" alt="" class="xl:w-72 w-60 mb-5" />
+              <p
+                class="2xl:text-[27px] text-xl text-center max-w-82 w-full text-secondary"
+              >
                 How to break down the walls that keep your authentic self hidden
                 from your forever partner
               </p>
             </div>
           </div>
-        </section>
-        <section>
-          <div class="flex">
-            <img src="assets/marni.webp" alt="" />
-            <div class="flex flex-col gap-8">
-              <h2 class="text-8xl text-main">
-                Meet our founder, <span class="text-red-orpiment">Marni</span>
+        </div>
+      </section>
+      <section class="md:mb-32 mb-20">
+        <div class="container mx-auto">
+          <div class="flex lg:gap-24 gap-12">
+            <div class="hidden md:block">
+              <img src="assets/marni.webp" alt="" />
+            </div>
+            <div
+              class="flex flex-col md:justify-end justify-center md:items-start items-center pb-8 gap-12"
+            >
+              <h2
+                class="2xl:text-8xl lg:text-6xl text-5xl md:text-left text-center text-main"
+              >
+                Meet our founder, <span class="text-vintage-coral">Marni</span>
               </h2>
-              <p>
+              <div class="md:hidden block">
+                <img
+                  src="assets/marni.webp"
+                  alt=""
+                  class="max-w-80 w-full mx-auto"
+                />
+              </div>
+              <p
+                class="2xl:text-[27px] text-xl leading-snug text-secondary max-w-3xl w-full"
+              >
                 Having been married for 17 years, divorced, and successfully
                 dated again in today’s complex social environment, and now
                 happily married, Marni understands what it feels like to be
                 lonely and sick of wasting time going on dates and having
-                relationships with unavailable men that go nowhere.<br />
+                relationships with unavailable men that go nowhere.<br /><br />
                 Through her own journey to find love, Marni discovered that
                 creating a process to shorten the journey for other women
                 suffering from the inability to create emotionally safe and
@@ -93,38 +163,44 @@
               </p>
               <a
                 href="#"
-                class="text-2xl bg-red-orpiment text-white px-8 py-3 rounded-full self-start"
-                >Discover Marni’s Proven Process</a
+                class="2xl:text-2xl text-xl font-bold bg-sari text-white px-10 py-5 rounded-full md:self-start hover:bg-opacity-50 transition-all ease-in-out"
+                ><span class="md:block hidden"
+                  >Discover Marni’s Proven Process</span
+                ><span class="md:hidden block">Learn more</span></a
               >
             </div>
           </div>
-        </section>
-        <section>
-          <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-            <div
-              class="grid grid-cols-2 gap-6 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400"
-            >
-              <a href="#" class="flex justify-center items-center">
-                <img src="assets/oprah.webp" alt="" />
-              </a>
-              <a href="#" class="flex justify-center items-center">
-                <img src="assets/drphil.webp" alt="" />
-              </a>
-              <a href="#" class="flex justify-center items-center">
-                <img src="assets/cosmopolitan.webp" alt="" />
-              </a>
-              <a href="#" class="flex justify-center items-center">
-                <img src="assets/glamour.webp" alt="" />
-              </a>
-              <a href="#" class="flex justify-center items-center">
-                <img src="assets/abc.webp" alt="" />
-              </a>
-            </div>
+        </div>
+      </section>
+      <section class="md:mb-32 mb-20">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap justify-center gap-8">
+            <a href="#" class="flex justify-center items-center md:grow">
+              <img src="assets/oprah.webp" alt="" class="sm:w-auto w-2/3" />
+            </a>
+            <a href="#" class="flex justify-center items-center md:grow">
+              <img src="assets/drphil.webp" alt="" class="sm:w-auto w-2/3" />
+            </a>
+            <a href="#" class="flex justify-center items-center md:grow">
+              <img
+                src="assets/cosmopolitan.webp"
+                alt=""
+                class="sm:w-auto w-2/3"
+              />
+            </a>
+            <a href="#" class="flex justify-center items-center md:grow">
+              <img src="assets/glamour.webp" alt="" class="sm:w-auto w-2/3" />
+            </a>
+            <a href="#" class="flex justify-center items-center md:grow">
+              <img src="assets/abc.webp" alt="" class="sm:w-auto w-2/3" />
+            </a>
           </div>
-        </section>
-        <section>
-          <div class="flex">
-            <div class="accordion-container">
+        </div>
+      </section>
+      <section class="md:mb-32 mb-20">
+        <div class="container mx-auto">
+          <div class="flex md:flex-row flex-col md:gap-36 gap-16">
+            <div class="accordion-container md:w-3/5 md:order-1 order-2">
               <div
                 class="ac bg-transparent border-0 border-b-2 border-[#aa9f89]"
               >
@@ -180,120 +256,338 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="md:w-2/5 md:order-2 order-1">
               <img src="assets/acc-img.webp" alt="" />
             </div>
           </div>
-        </section>
-      </div>
-      <section class="bg-secondary">
-        <div class="container mx-auto py-32 flex gap-8">
-          <div>
-            <h2 class="text-5xl text-white">
+        </div>
+      </section>
+      <section class="bg-secondary md:mb-32 mb-20">
+        <div
+          class="container mx-auto md:py-32 py-12 md:px-0 px-8 flex xl:flex-nowrap flex-wrap md:gap-8"
+        >
+          <div class="flex flex-col xl:w-1/2 w-full">
+            <h2
+              class="xl:text-[53px] md:text-5xl sm:text-4xl text-3xl text-sugar-milk leading-tight md:mb-12"
+            >
               See how women have been impacted by the
-              <span class="text-[#ddba7c]">power of love</span>:
+              <span class="text-wheat-bread">power of love</span>:
             </h2>
-            <div class="bg-illusive-dream rounded-br-full py-10 pl-10 pr-24">
+            <div
+              class="bg-illusive-dream rounded-br-[176px] py-10 pl-16 pr-20 md:flex hidden flex-col gap-6 shadow-xl"
+            >
               <p class="font-display font-bold text-3xl text-main">
                 “Once Marni held me accountable, it was easier for me to finally
                 recognize when Mr. Right (Mark) came along.”
               </p>
-              <p>
+              <p class="text-xl text-aged-olive">
                 If I hadn’t followed the guiding hand of Marni, I wouldn’t have
                 been ready to accept the moments and opportunities presented to
                 me every day.
               </p>
+              <div class="flex items-center gap-7">
+                <img src="assets/testimonial-1.webp" alt="" class="w-16" />
+                <span class="text-3xl font-display italic text-black-space"
+                  >Janice</span
+                >
+              </div>
             </div>
           </div>
-          <div>
-            <div class="bg-illusive-dream rounded-tl-full py-10 pr-10 pl-32">
+          <div class="xl:w-1/2 w-full">
+            <div
+              class="bg-illusive-dream rounded-tl-[176px] py-10 pr-16 pl-32 md:flex hidden flex-col gap-6 shadow-xl"
+            >
               <p class="font-display font-bold text-3xl text-main">
                 “I am now much more grounded and confident and I feel like I’m
                 living the life that I wanted to live now.”
               </p>
-              <p>
+              <p class="text-xl text-aged-olive">
                 When I first joined the program, the best initial results I got
                 were me actually loving who I am. I think I always had an
                 appreciation for myself, but I didn’t truly believe that I was
                 worthy of great things.
               </p>
+              <div class="flex items-center gap-7">
+                <img src="assets/testimonial-2.webp" alt="" class="w-16" />
+                <span class="text-3xl font-display italic text-black-space"
+                  >Jill</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto">
+          <div class="glide md:hidden block">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div
+                    class="bg-illusive-dream rounded-br-[176px] py-10 md:pl-16 pl-8 md:pr-20 pr-8 flex flex-col gap-6 shadow-xl"
+                  >
+                    <p
+                      class="font-display font-bold md:text-3xl text-2xl text-main"
+                    >
+                      “Once Marni held me accountable, it was easier for me to
+                      finally recognize when Mr. Right (Mark) came along.”
+                    </p>
+                    <p class="text-xl text-aged-olive">
+                      If I hadn’t followed the guiding hand of Marni, I wouldn’t
+                      have been ready to accept the moments and opportunities
+                      presented to me every day.
+                    </p>
+                    <div class="flex items-center gap-7">
+                      <img
+                        src="assets/testimonial-1.webp"
+                        alt=""
+                        class="w-16"
+                      />
+                      <span
+                        class="md:text-3xl text-2xl font-display italic text-black-space"
+                        >Janice</span
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div
+                    class="bg-illusive-dream rounded-tl-[176px] py-10 md:pr-16 pr-8 md:pl-32 pl-16 flex flex-col gap-6 shadow-xl"
+                  >
+                    <p
+                      class="font-display font-bold md:text-3xl text-2xl text-main"
+                    >
+                      “I am now much more grounded and confident and I feel like
+                      I’m living the life that I wanted to live now.”
+                    </p>
+                    <p class="text-xl text-aged-olive">
+                      When I first joined the program, the best initial results
+                      I got were me actually loving who I am. I think I always
+                      had an appreciation for myself, but I didn’t truly believe
+                      that I was worthy of great things.
+                    </p>
+                    <div class="flex items-center gap-7">
+                      <img
+                        src="assets/testimonial-2.webp"
+                        alt=""
+                        class="w-16"
+                      />
+                      <span
+                        class="md:text-3xl text-2xl font-display italic text-black-space"
+                        >Jill</span
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="py-8 max-w-60 mx-auto">
+              <div class="glide__arrows flex" data-glide-el="controls">
+                <button
+                  class="glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11.817"
+                    height="20.668"
+                    viewBox="0 0 11.817 20.668"
+                  >
+                    <path
+                      data-name="Slider Arrow Left"
+                      d="m14.813 16.525 7.821-7.814a1.477 1.477 0 0 0-2.092-2.086l-8.861 8.854a1.474 1.474 0 0 0-.043 2.037l8.9 8.916a1.477 1.477 0 1 0 2.092-2.086z"
+                      transform="translate(-11.251 -6.194)"
+                      style="fill: #e0d3c2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="glide__arrow glide__arrow--right ml-auto"
+                  data-glide-dir=">"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11.817"
+                    height="20.669"
+                    viewBox="0 0 11.817 20.669"
+                  >
+                    <path
+                      data-name="Slider Arrow Right"
+                      d="m3.562 10.332 7.821-7.814A1.477 1.477 0 1 0 9.291.431L.43 9.286a1.474 1.474 0 0 0-.043 2.037l8.9 8.916a1.477 1.477 0 1 0 2.092-2.086z"
+                      transform="rotate(180 5.908 10.335)"
+                      style="fill: #e0d3c2"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="glide__bullets flex justify-center gap-4 relative -top-4 max-w-48 mx-auto"
+                data-glide-el="controls[nav]"
+              >
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="container mx-auto">
-          <h2 class="text-7xl">What’s on the agenda</h2>
-          <div>
-            <h3>Your REVEAL Day! (aka The Silver Bullet)</h3>
-            <p>
-              Identify your personal 10% blindspot (everyone has one) that sends
-              quality men running for the hills and clear limiting beliefs that
-              keep you stuck in the scarcity mindset (so you can attract a
-              quality man who’s words and actions actually match).
-              <br />
-              By the end of the day, you’ll know EXACTLY why you’re single and
-              what next steps are required to get you closer to magnetizing
-              high-caliber men and creating the life you love.
-            </p>
+        <div class="container mx-auto flex flex-wrap">
+          <div class="xl:w-2/5 w-full">
+            <h2
+              class="2xl:text-[80px] md:text-6xl text-4xl text-maire xl:max-w-md leading-[1.13] xl:text-left text-center xl:mb-0 mb-8"
+            >
+              What’s on the agenda
+            </h2>
+          </div>
+          <div class="xl:w-3/5 w-full flex flex-col gap-20">
+            <ul
+              data-tabs
+              class="flex justify-evenly gap-2 bg-stone 2xl:text-[40px] text-3xl font-display font-bold sm:rounded-full rounded-3xl sm:p-2 p-8 sm:flex-row flex-col"
+            >
+              <li>
+                <a data-tabby-default href="#day1" class="w-full text-center"
+                  >Day 1</a
+                >
+              </li>
+              <li><a href="#day2" class="w-full text-center">Day 2</a></li>
+              <li><a href="#day3" class="w-full text-center">Day 3</a></li>
+            </ul>
 
-            <ol class="relative border-s-4 border-lox border-opacity-25">
-              <li class="mb-10 ms-6">
-                <span
-                  class="absolute flex items-center justify-center w-6 h-6 bg-lox text-white rounded-full -start-3 ring-8 ring-lox"
-                >
-                  1
-                </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold">
-                  Understand Why
+            <div id="day1">
+              <div class="flex flex-col gap-10">
+                <h3 class="2xl:text-4xl text-3xl">
+                  Your REVEAL Day! (aka The Silver Bullet)
                 </h3>
-                <p class="mb-4 text-base font-normal">
-                  Even though you’ve read all the self-help books and followed
-                  all the rules — you’re still single and how to make our secret
-                  technology work for you so that you attract the hot,
-                  high-quality man your heart desires.
+                <p class="sm:text-xl text-lg text-aged-olive mb-4">
+                  Identify your personal 10% blindspot (everyone has one) that
+                  sends quality men running for the hills and clear limiting
+                  beliefs that keep you stuck in the scarcity mindset (so you
+                  can attract a quality man who’s words and actions actually
+                  match).
+                  <br /><br />
+                  By the end of the day, you’ll know EXACTLY why you’re single
+                  and what next steps are required to get you closer to
+                  magnetizing high-caliber men and creating the life you love.
                 </p>
-              </li>
-              <li class="mb-10 ms-6">
-                <span
-                  class="absolute flex items-center justify-center w-6 h-6 bg-lox text-white rounded-full -start-3 ring-8 ring-lox"
+
+                <ol
+                  class="relative border-s-4 border-lox border-opacity-25 my-16 md:ml-20 ml-8"
                 >
-                  2
-                </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold">
-                  Understand Why
-                </h3>
-                <p class="mb-4 text-base font-normal">
-                  Even though you’ve read all the self-help books and followed
-                  all the rules — you’re still single and how to make our secret
-                  technology work for you so that you attract the hot,
-                  high-quality man your heart desires.
-                </p>
-              </li>
-              <li class="ms-6">
-                <span
-                  class="absolute flex items-center justify-center w-6 h-6 bg-lox text-white rounded-full -start-3 ring-8 ring-lox"
-                >
-                  3
-                </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold">
-                  Understand Why
-                </h3>
-                <p class="mb-4 text-base font-normal">
-                  Even though you’ve read all the self-help books and followed
-                  all the rules — you’re still single and how to make our secret
-                  technology work for you so that you attract the hot,
-                  high-quality man your heart desires.
-                </p>
-              </li>
-            </ol>
+                  <li class="mb-10 md:ms-16 ms-8">
+                    <span
+                      class="absolute flex items-center justify-center md:w-10 md:h-10 w-6 h-6 bg-lox text-white rounded-full md:-start-5 -start-3 ring-8 ring-lox md:text-2xl text-lg font-bold"
+                    >
+                      1
+                    </span>
+                    <h3 class="flex items-center 2xl:text-3xl text-2xl mb-6">
+                      Understand Why
+                    </h3>
+                    <p class="mb-8 sm:text-xl text-lg text-aged-olive">
+                      Even though you’ve read all the self-help books and
+                      followed all the rules — you’re still single and how to
+                      make our secret technology work for you so that you
+                      attract the hot, high-quality man your heart desires.
+                    </p>
+                  </li>
+                  <li class="mb-10 md:ms-16 ms-8">
+                    <span
+                      class="absolute flex items-center justify-center md:w-10 md:h-10 w-6 h-6 bg-lox text-white rounded-full md:-start-5 -start-3 ring-8 ring-lox md:text-2xl text-lg font-bold"
+                    >
+                      2
+                    </span>
+                    <h3
+                      class="flex items-center 2xl:text-3xl sm:text-2xl text-xl mb-6"
+                    >
+                      Learn 4 Characteristics that Attract Men
+                    </h3>
+                    <p class="mb-8 sm:text-xl text-lg text-aged-olive">
+                      Not just any men, but men who are open, vulnerable, and
+                      committed, so that no man will ever disappear on you
+                      again.
+                    </p>
+                  </li>
+                  <li class="mb-10 md:ms-16 ms-8">
+                    <span
+                      class="absolute flex items-center justify-center md:w-10 md:h-10 w-6 h-6 bg-lox text-white rounded-full md:-start-5 -start-3 ring-8 ring-lox md:text-2xl text-lg font-bold"
+                    >
+                      3
+                    </span>
+                    <h3
+                      class="flex items-center 2xl:text-3xl sm:text-2xl text-xl mb-6"
+                    >
+                      Reprogram Your Dating GPS
+                    </h3>
+                    <p class="mb-8 sm:text-xl text-lg text-aged-olive">
+                      Understand why now matter HOW you meet a man it won’t ever
+                      work until you reprogram your dating GPS so that you
+                      become “the destination” for the men you want.
+                    </p>
+                  </li>
+                  <li class="mb-10 md:ms-16 ms-8">
+                    <span
+                      class="absolute flex items-center justify-center md:w-10 md:h-10 w-6 h-6 bg-lox text-white rounded-full md:-start-5 -start-3 ring-8 ring-lox md:text-2xl text-lg font-bold"
+                    >
+                      4
+                    </span>
+                    <h3
+                      class="flex items-center 2xl:text-3xl sm:text-2xl text-xl mb-6"
+                    >
+                      Learn what “feminine” means now
+                    </h3>
+                    <p class="mb-8 sm:text-xl text-lg text-aged-olive">
+                      Especially as a successful woman so that you don’t have to
+                      jump into the girly-girl bucket to attract a high quality
+                      man.
+                    </p>
+                  </li>
+                  <li class="md:ms-16 ms-8">
+                    <span
+                      class="absolute flex items-center justify-center md:w-10 md:h-10 w-6 h-6 bg-lox text-white rounded-full md:-start-5 -start-3 ring-8 ring-lox md:text-2xl text-lg font-bold"
+                    >
+                      5
+                    </span>
+                    <h3
+                      class="flex items-center 2xl:text-3xl sm:text-2xl text-xl mb-6"
+                    >
+                      Remove Limiting Beliefs
+                    </h3>
+                    <p class="mb-8 sm:text-xl text-lg text-aged-olive">
+                      Eliminate the “nothing works for me” belief in your head
+                      so that the universe knows you are loveable and sends you
+                      the right man to love.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div id="day2">content here</div>
+            <div id="day3">content here</div>
           </div>
         </div>
       </section>
+      <footer
+        class="container mx-auto md:text-xl text-lg text-secondary flex lg:flex-row flex-col gap-4 justify-center items-center mb-12"
+      >
+        <p>Copyright © 2022 Dating with Dignity. All Rights Reserved. |</p>
+        <div class="flex gap-4">
+          <a href="#" class="underline hover:text-main">Terms of Service</a>
+          <a href="#" class="underline hover:text-main">Privacy Policy</a>
+        </div>
+      </footer>
     </main>
     <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
     <script>
-      new Accordion(".accordion-container");
+      new Accordion(".accordion-container", {
+        duration: 300,
+        openOnInit: [0],
+      });
+    </script>
+    <script>
+      var tabs = new Tabby("[data-tabs]");
+    </script>
+    <script>
+      new Glide(".glide").mount();
     </script>
   </body>
 </html>

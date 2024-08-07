@@ -12,7 +12,40 @@
     @apply font-display font-bold;
   }
 }
-
+.ac .ac-trigger {
+  @apply font-display xl:text-3xl sm:text-2xl text-xl text-maire py-6 !important;
+}
+.ac .ac-panel .ac-text {
+  @apply font-body xl:text-xl text-lg text-aged-olive leading-normal pt-4 pb-10 !important;
+}
 .ac .ac-trigger::after {
   @apply text-lox border border-lox rounded-full w-5;
+}
+[role="tablist"] li {
+  @apply border-0 !important;
+  @apply sm:grow sm:max-w-full sm:w-auto w-full max-w-60 mx-auto;
+}
+[role="tab"] {
+  @apply px-6 py-2 !important;
+  @apply text-limonite-brown;
+}
+[role="tab"][aria-selected="true"] {
+  @apply bg-cream border-0 rounded-full !important;
+}
+[role="tab"]:hover:not([aria-selected="true"]) {
+  @apply bg-cream border-0 rounded-full transition-all ease-in-out !important;
+}
+.ac .ac-trigger::after {
+  content: url("../assets/plus-circle-line.webp") !important;
+  @apply border-0 !important;
+}
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: url("../assets/minus-circle-line.webp") !important;
+  width: 1rem !important;
+}
+.glide__bullet {
+  @apply h-3 w-3 bg-illusive-dream bg-opacity-45 rounded-full;
+}
+.glide__bullet--active {
+  @apply bg-illusive-dream;
 }
