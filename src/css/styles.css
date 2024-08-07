@@ -613,6 +613,10 @@ h1,
   inset-inline-start: -0.75rem;
 }
 
+.-top-4 {
+  top: -1rem;
+}
+
 .left-1\/2 {
   left: 50%;
 }
@@ -623,10 +627,6 @@ h1,
 
 .top-\[35\%\] {
   top: 35%;
-}
-
-.-top-4 {
-  top: -1rem;
 }
 
 .z-50 {
@@ -691,6 +691,22 @@ h1,
   margin-inline-start: 2rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -719,6 +735,10 @@ h1,
   width: 4rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -739,12 +759,12 @@ h1,
   width: 100%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-48 {
+  max-width: 12rem;
 }
 
 .max-w-60 {
@@ -765,14 +785,6 @@ h1,
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-48 {
-  max-width: 12rem;
-}
-
-.grow {
-  flex-grow: 1;
 }
 
 .-translate-x-1\/2 {
@@ -796,14 +808,6 @@ h1,
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1047,6 +1051,10 @@ h1,
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -1388,6 +1396,10 @@ h1,
     margin-inline-start: 4rem;
   }
 
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1416,20 +1428,12 @@ h1,
     width: 60%;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:grow {
     flex-grow: 1;
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1452,6 +1456,10 @@ h1,
     gap: 2rem;
   }
 
+  .md\:gap-20 {
+    gap: 5rem;
+  }
+
   .md\:self-start {
     align-self: flex-start;
   }
@@ -1464,6 +1472,11 @@ h1,
   .md\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .md\:pl-16 {
@@ -1484,6 +1497,10 @@ h1,
 
   .md\:pt-32 {
     padding-top: 8rem;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .md\:text-left {
@@ -1565,6 +1582,10 @@ h1,
 
   .lg\:gap-24 {
     gap: 6rem;
+  }
+
+  .lg\:gap-36 {
+    gap: 9rem;
   }
 
   .lg\:pt-0 {
